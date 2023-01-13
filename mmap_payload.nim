@@ -15,7 +15,7 @@ var
     0x00, 0x00, 0x00, 0x0F, 0x05, 0x48,
     0x89, 0xEC, 0x5D, 0xC3 ]
 
-# alloc memory and set is as executable
+# alloc memory and set it as executable
 adr = mmap(nil, sizeof payload, prot, flag, -1, 0)
 echo &"{adr.repr} = mmap(nil, {sizeof payload}, {prot}, {flag}, -1, 0)"
 # copy the payload to the memory
